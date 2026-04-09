@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests - My Portfolio</title>
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <style>
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .interest-card {
+            background-color: #b4c187;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .interest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .interest-title {
+            color: #5b9d72;
+            font-size: 22px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .interest-description {
+            color: #5c825c;
+            line-height: 1.6;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">My Portfolio</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="interest.html" class="active">Interests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main class="container">
+        <header class="page-header">
+            <h1>My Interests & Hobbies</h1>
+            <p style="text-align: center; color: #4a5568;">Things I'm passionate about outside of work</p>
+        </header>
+
+        <div class="interests-grid">
+            
+            <div class="interest-card">
+                <h3 class="interest-title">Cycling</h3>
+                <p class="interest-description">
+                    Cycling is an activity that I've always loved ever since I was a child. I felt that cycling to a hil or somewhere witha cycle and a good spotify list was the ultimate combo.
+                </p>
+            </div>
+
+           
+            <div class="interest-card">
+                <h3 class="interest-title">Reading</h3>
+                <p class="interest-description">
+                    Reading is one of my favorite hobbies. I love reading a good book and exploring different views and perspectives through the pages.It summarizes the experience of the author's life in a couple of fine papers.
+                </p>
+            </div>
+
+            
+            <div class="interest-card">
+                <h3 class="interest-title">Gaming</h3>
+                <p class="interest-description">
+                    Gaming is a great way for me to relax and unwind after a long day. I enjoy the challenge of solving puzzles and the excitement of competing against others in multiplayer games.It improves reaction time and finger coordination. It also emerges as a fun way of solving puzzles.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
